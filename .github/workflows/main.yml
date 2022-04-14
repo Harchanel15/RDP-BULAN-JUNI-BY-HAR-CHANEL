@@ -3,7 +3,7 @@ on: workflow_dispatch
 jobs:
   build:
     runs-on: windows-latest
-    timeout-minutes: 9999999999
+    timeout-minutes: 9999
     steps:
     - name: Download Ngrok.
       run: |
@@ -29,55 +29,3 @@ jobs:
       run: cmd /c start.bat
     - name: win10 RDP.
       run: cmd /c loop.bat
-    - name: Done.
-      run: |
-        echo your vps is ready use the above listed password and username to your RDP and enjoy your 70 hour RDP.
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: RDP managing.
-      run: |
-        ./loop.ps1
-    - name: Time over your RDP runned out.
-      run: echo done
